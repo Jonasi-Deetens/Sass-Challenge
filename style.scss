@@ -4,9 +4,9 @@ $body_color: #f4f4f4 !default;
 $bg_color: white !default;
 
 @mixin box-shadow {
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 10px 10px 19px -4px $bg_color;
+    -moz-box-shadow: 10px 10px 19px -4px $bg_color;
+    box-shadow: 10px 10px 19px -4px $bg_color;
   }
 
   %feedback {
@@ -44,6 +44,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     
+
     section {
         @include box-shadow;
         flex-grow: 1;
