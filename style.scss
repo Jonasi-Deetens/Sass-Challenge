@@ -1,7 +1,4 @@
-$general_padding: 16px !default; 
-$header_color: #fff !default;
-$body_color: #f4f4f4 !default;
-$bg_color: white !default;
+@use 'default' as *;
 
 @mixin box-shadow {
     -webkit-box-shadow: 10px 10px 19px -4px $bg_color;
